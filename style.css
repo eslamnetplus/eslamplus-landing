@@ -1,1 +1,86 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #f3f3f3;
+  text-align: center;
+}
 
+.app {
+  padding: 20px;
+}
+
+.logo {
+  width: 120px;
+}
+
+input {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+button {
+  padding: 14px 20px;
+  background: purple;
+  color: white;
+  border: none;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+.poster {
+  width: 800px;
+  height: 800px;
+  background: white;
+  position: relative;
+  margin: 20px auto;
+}
+
+.home-ui {
+  width: 250px;
+  position: absolute;
+  top: 50px;
+  right: 40px;
+}
+
+.wifi-ui {
+  width: 250px;
+  position: absolute;
+  top: 250px;
+  left: 40px;
+}
+
+.wifi-icon {
+  width: 100px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+.qr {
+  width: 120px;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+
+#phoneText {
+  position: absolute;
+  bottom: 200px;
+  right: 100px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#networkText {
+  position: absolute;
+  bottom: 140px;
+  right: 100px;
+  font-size: 28px;
+  color: purple;
+}
+
+#downloadBtn {
+  margin-top: 20px;
+}
