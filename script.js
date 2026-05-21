@@ -1,25 +1,21 @@
-function updatePoster() {
-    const networkInput = document.getElementById("networkInput").value;
-    const phoneInput = document.getElementById("phoneInput").value;
+function generateDesign() {
+  const phone = document.getElementById('phoneInput').value;
+  const network = document.getElementById('networkInput').value;
 
-    document.getElementById("networkName").textContent =
-        networkInput || "اسم الشبكة";
+  if(phone) {
+    document.getElementById('phoneText').innerText = phone;
+  }
 
-    document.getElementById("phoneNumber").textContent =
-        phoneInput || "777000000";
+  if(network) {
+    document.getElementById('networkText').innerText = network;
+  }
 }
 
-function downloadPoster() {
-    const poster = document.getElementById("poster");
-
-    html2canvas(poster, {
-        scale: 2,
-        useCORS: true,
-        backgroundColor: null
-    }).then(function(canvas) {
-        const link = document.createElement("a");
-        link.download = "islamnp-design.png";
-        link.href = canvas.toDataURL("image/png");
-        link.click();
-    });
+function downloadImage() {
+  html2canvas(document.querySelector(".poster")).then(canvas => {
+    const link = document.createElement("a");
+    link.download = "islamnp-design.png";
+    link.href = canvas.toDataURL();
+    link.click();
+  });
 }
