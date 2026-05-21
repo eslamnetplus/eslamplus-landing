@@ -1,86 +1,74 @@
-body {
-  margin: 0;
-  font-family: Arial;
-  background: #f3f3f3;
-  text-align: center;
-}
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>مولد تصاميم اسلام نت بلس</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-.app {
-  padding: 20px;
-}
+<div class="container">
 
-.logo {
-  width: 120px;
-}
+  <header class="header">
+    <img src="assets/logo.png" class="logo">
+    <h1>أنشئ إعلان شبكتك خلال ثوانٍ</h1>
+    <p>أدخل بياناتك وسيتم إنشاء تصميم احترافي جاهز للتنزيل</p>
+  </header>
 
-input {
-  width: 90%;
-  padding: 12px;
-  margin: 10px 0;
-  font-size: 18px;
-}
+  <section class="form-box">
+    <input type="text" id="phoneInput" placeholder="أدخل رقم الهاتف">
+    <input type="text" id="networkInput" placeholder="أدخل اسم الشبكة">
 
-button {
-  padding: 14px 20px;
-  background: purple;
-  color: white;
-  border: none;
-  font-size: 18px;
-  border-radius: 10px;
-}
+    <button onclick="updateDesign()">تحديث التصميم</button>
+    <button onclick="downloadDesign()">تحميل التصميم</button>
+  </section>
 
-.poster {
-  width: 800px;
-  height: 800px;
-  background: white;
-  position: relative;
-  margin: 20px auto;
-}
+  <section class="preview-section">
+    <div id="design" class="design-card">
 
-.home-ui {
-  width: 250px;
-  position: absolute;
-  top: 50px;
-  right: 40px;
-}
+      <div class="top-bar">
+        <img src="assets/logo.png" class="small-logo">
+        <div>
+          <h2>اسلام نت بلس</h2>
+          <p>كبينة الواي فاي</p>
+        </div>
+      </div>
 
-.wifi-ui {
-  width: 250px;
-  position: absolute;
-  top: 250px;
-  left: 40px;
-}
+      <div class="content-grid">
 
-.wifi-icon {
-  width: 100px;
-  position: absolute;
-  top: 50px;
-  left: 50px;
-}
+        <div class="left-side">
+          <img src="assets/wifi-icon.jpg" class="wifi-icon">
+          <h3>اشترك بسهولة</h3>
+          <p>اختر شبكتك وابدأ خلال لحظات</p>
 
-.qr {
-  width: 120px;
-  position: absolute;
-  bottom: 30px;
-  left: 30px;
-}
+          <div class="info-card">
+            <span>📶 الشبكة:</span>
+            <strong id="networkText">اسم الشبكة</strong>
+          </div>
 
-#phoneText {
-  position: absolute;
-  bottom: 200px;
-  right: 100px;
-  font-size: 30px;
-  font-weight: bold;
-}
+          <div class="info-card">
+            <span>📱 الهاتف:</span>
+            <strong id="phoneText">777000000</strong>
+          </div>
 
-#networkText {
-  position: absolute;
-  bottom: 140px;
-  right: 100px;
-  font-size: 28px;
-  color: purple;
-}
+          <img src="assets/qr.png" class="qr">
+        </div>
 
-#downloadBtn {
-  margin-top: 20px;
-}
+        <div class="right-side">
+          <img src="assets/home-ui.jpg" class="phone-ui">
+          <img src="assets/wifi-ui.jpg" class="wifi-ui">
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+</div>
+
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
