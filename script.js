@@ -1,25 +1,20 @@
-function updateDesign() {
-  const phone = document.getElementById("phoneInput").value.trim();
-  const network = document.getElementById("networkInput").value.trim();
+// اسلام بلس Landing Page
 
-  document.getElementById("phoneText").textContent =
-    phone || "777000000";
+document.addEventListener("DOMContentLoaded", () => {
 
-  document.getElementById("networkText").textContent =
-    network || "اسم الشبكة";
-}
+  const cards = document.querySelectorAll(".card");
 
-function downloadDesign() {
-  const design = document.getElementById("design");
+  cards.forEach((card, index) => {
 
-  html2canvas(design, {
-    scale: 3,
-    useCORS: true,
-    backgroundColor: null
-  }).then((canvas) => {
-    const link = document.createElement("a");
-    link.download = "islam-net-plus-design.png";
-    link.href = canvas.toDataURL("image/png");
-    link.click();
+    card.style.opacity = "0";
+    card.style.transform = "translateY(20px)";
+
+    setTimeout(() => {
+      card.style.transition = "all .5s ease";
+      card.style.opacity = "1";
+      card.style.transform = "translateY(0)";
+    }, index * 120);
+
   });
-}
+
+});
