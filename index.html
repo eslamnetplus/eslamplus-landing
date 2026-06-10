@@ -1,74 +1,167 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>مولد تصاميم اسلام نت بلس</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>إسلام بلس للدفع الإلكتروني</title>
+
   <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
 
-<div class="container">
+  <!-- Hero -->
 
-  <header class="header">
-    <img src="assets/logo.png" class="logo">
-    <h1>أنشئ إعلان شبكتك خلال ثوانٍ</h1>
-    <p>أدخل بياناتك وسيتم إنشاء تصميم احترافي جاهز للتنزيل</p>
-  </header>
+  <section class="hero">
 
-  <section class="form-box">
-    <input type="text" id="phoneInput" placeholder="أدخل رقم الهاتف">
-    <input type="text" id="networkInput" placeholder="أدخل اسم الشبكة">
+    <div class="hero-content">
 
-    <button onclick="updateDesign()">تحديث التصميم</button>
-    <button onclick="downloadDesign()">تحميل التصميم</button>
-  </section>
+      <img src="assets/logo.png" class="logo">
 
-  <section class="preview-section">
-    <div id="design" class="design-card">
+      <h1>كل خدماتك الرقمية في تطبيق واحد</h1>
 
-      <div class="top-bar">
-        <img src="assets/logo.png" class="small-logo">
-        <div>
-          <h2>اسلام نت بلس</h2>
-          <p>كبينة الواي فاي</p>
-        </div>
-      </div>
+      <p>
+        إدارة حسابك، شحن الألعاب، البطاقات الإلكترونية،
+        الاشتراكات الرقمية، شبكات الواي فاي والتحويلات
+        بكل سهولة وأمان.
+      </p>
 
-      <div class="content-grid">
+      <div class="hero-buttons">
 
-        <div class="left-side">
-          <img src="assets/wifi-icon.jpg" class="wifi-icon">
-          <h3>اشترك بسهولة</h3>
-          <p>اختر شبكتك وابدأ خلال لحظات</p>
+        <a href="https://play.google.com/store/apps/details?id=eslam.net.plus"
+          target="_blank" class="btn primary">
+          تحميل التطبيق
+        </a>
 
-          <div class="info-card">
-            <span>📶 الشبكة:</span>
-            <strong id="networkText">اسم الشبكة</strong>
-          </div>
-
-          <div class="info-card">
-            <span>📱 الهاتف:</span>
-            <strong id="phoneText">777000000</strong>
-          </div>
-
-          <img src="assets/qr.png" class="qr">
-        </div>
-
-        <div class="right-side">
-          <img src="assets/home-ui.jpg" class="phone-ui">
-          <img src="assets/wifi-ui.jpg" class="wifi-ui">
-        </div>
+        <a href="https://eslamplus.nflow.tech"
+          target="_blank" class="btn secondary">
+          ابدأ الآن
+        </a>
 
       </div>
 
     </div>
+
+    <div class="hero-image">
+
+      <img src="assets/app1.jpg">
+
+    </div>
+
   </section>
 
-</div>
+  <!-- Services -->
 
-<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
-<script src="script.js"></script>
+  <section class="services">
+
+    <h2>الخدمات</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        💸
+        <h3>تحويل لحساب عميل</h3>
+      </div>
+
+      <div class="card">
+        📶
+        <h3>شبكات واي فاي</h3>
+      </div>
+
+      <div class="card">
+        🎮
+        <h3>شحن الألعاب</h3>
+      </div>
+
+      <div class="card">
+        🎁
+        <h3>شحن البرامج</h3>
+      </div>
+
+      <div class="card">
+        💳
+        <h3>البطاقات الإلكترونية</h3>
+      </div>
+
+      <div class="card">
+        📺
+        <h3>الاشتراكات</h3>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Gallery -->
+
+  <section class="gallery">
+
+    <h2>صور من التطبيق</h2>
+
+    <div class="gallery-grid">
+
+      <img src="assets/app1.jpg">
+      <img src="assets/app2.jpg">
+      <img src="assets/app3.jpg">
+      <img src="assets/app4.jpg">
+      <img src="assets/app5.jpg">
+
+    </div>
+
+  </section>
+
+  <!-- Download -->
+
+  <section class="download">
+
+    <h2>حمّل التطبيق الآن</h2>
+
+    <img src="assets/qr.png" class="qr">
+
+    <a href="https://play.google.com/store/apps/details?id=eslam.net.plus"
+      target="_blank" class="btn primary">
+      Google Play
+    </a>
+
+  </section>
+
+  <!-- Contact -->
+
+  <section class="contact">
+
+    <h2>تواصل معنا</h2>
+
+    <p>782666791</p>
+    <p>738911634</p>
+
+    <div class="socials">
+
+      <a href="https://www.facebook.com/share/p/1EH4Koy3Zr/" target="_blank">
+        Facebook
+      </a>
+
+      <a href="https://www.instagram.com/eslamnet_plus" target="_blank">
+        Instagram
+      </a>
+
+      <a href="https://chat.whatsapp.com/JXYlNheoiFCK1a8PcBxi3j" target="_blank">
+        WhatsApp
+      </a>
+
+    </div>
+
+  </section>
+
+  <script src="script.js"></script>
 
 </body>
-</html>
+
+  </html>
