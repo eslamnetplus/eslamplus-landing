@@ -131,7 +131,6 @@ max-width:420px;
 border-radius:35px;
 box-shadow:0 20px 50px rgba(0,0,0,.25);
 }
-
 .stats{
 max-width:1200px;
 margin:-50px auto 80px;
@@ -202,14 +201,15 @@ transform:translateY(-10px);
 }
 
 .card h3{
-font-size:2rem;
+font-size:1.8rem;
 color:#6a11cb;
 margin-bottom:15px;
 }
 
 .card p{
-font-size:1.2rem;
-line-height:1.8;
+font-size:1rem;
+line-height:1.9;
+color:#666;
 }
 
 .feature-grid{
@@ -229,13 +229,15 @@ box-shadow:0 10px 25px rgba(0,0,0,.08);
 }
 
 .feature-grid h3{
-font-size:2rem;
+font-size:1.6rem;
 margin-bottom:15px;
+color:#6a11cb;
 }
 
 .feature-grid p{
-font-size:1.1rem;
+font-size:1rem;
 line-height:1.8;
+color:#666;
 }
 
 .screens{
@@ -247,8 +249,7 @@ width:100%;
 max-width:400px;
 border-radius:30px;
 box-shadow:0 20px 50px rgba(0,0,0,.15);
-}
-
+   }
 .download{
 text-align:center;
 background:white;
@@ -286,12 +287,22 @@ background:#6a11cb;
 color:white;
 padding:12px 25px;
 border-radius:30px;
+font-weight:600;
+transition:.3s;
+}
+
+.socials a:hover{
+transform:translateY(-3px);
 }
 
 .cta{
 background:linear-gradient(135deg,#6a11cb,#8f49ff);
 color:white;
 text-align:center;
+}
+
+.cta h2{
+color:white;
 }
 
 .cta p{
@@ -323,6 +334,45 @@ border-radius:50%;
 box-shadow:0 10px 25px rgba(0,0,0,.3);
 z-index:999;
 }
+
+/* تأثيرات الظهور */
+
+.card,
+.stat-box,
+.feature-grid div,
+.screens img{
+opacity:0;
+transform:translateY(30px);
+transition:.7s;
+}
+
+.show{
+opacity:1;
+transform:translateY(0);
+}
+
+/* زر العودة للأعلى */
+
+#backToTop{
+position:fixed;
+right:20px;
+bottom:20px;
+width:55px;
+height:55px;
+border:none;
+border-radius:50%;
+background:#6a11cb;
+color:white;
+font-size:24px;
+cursor:pointer;
+display:none;
+align-items:center;
+justify-content:center;
+box-shadow:0 10px 20px rgba(0,0,0,.2);
+z-index:9999;
+}
+
+/* الجوال */
 
 @media(max-width:768px){
 
@@ -369,57 +419,11 @@ font-size:2.3rem;
 .logo-area span{
 font-size:1.8rem;
 }
-   }
-/* =========================
-Animations
-========================= */
 
-.card,
-.stat-box,
-.feature-grid div,
-.screens img{
-
-opacity:0;
-transform:translateY(30px);
-transition:.7s;
-
+.whatsapp-float{
+width:60px;
+height:60px;
+font-size:30px;
 }
-
-.show{
-
-opacity:1;
-transform:translateY(0);
-
-}
-
-/* =========================
-Back To Top
-========================= */
-
-#backToTop{
-
-position:fixed;
-right:20px;
-bottom:20px;
-
-width:55px;
-height:55px;
-
-border:none;
-border-radius:50%;
-
-background:#6a11cb;
-color:white;
-
-font-size:24px;
-cursor:pointer;
-
-display:none;
-align-items:center;
-justify-content:center;
-
-box-shadow:0 10px 20px rgba(0,0,0,.2);
-
-z-index:9999;
 
    }
