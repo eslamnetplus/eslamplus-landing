@@ -1,122 +1,65 @@
-// =========================
-// Islam Plus Landing Page
-// =========================
+// Slider
 
-// ظهور العناصر أثناء التمرير
+const slides = document.querySelectorAll(".slide");
 
-const observer = new IntersectionObserver((entries) => {
+const nextBtn = document.querySelector(".next");
 
-entries.forEach((entry) => {
+const prevBtn = document.querySelector(".prev");
 
-if (entry.isIntersecting) {
-entry.target.classList.add("show");
-}
+let current = 0;
 
+function showSlide(index){
+
+slides.forEach(slide=>{
+slide.classList.remove("active");
 });
 
-}, {
-threshold: 0.15
-});
-
-document.querySelectorAll(
-".card, .stat-box, .feature-grid div, .screens img"
-).forEach((el) => {
-
-observer.observe(el);
-
-});
-
-// عدادات الإحصائيات
-
-const counters = document.querySelectorAll(".stat-box h3");
-
-counters.forEach((counter) => {
-
-const text = counter.innerText;
-
-if (text.includes("+")) {
-
-const target = parseInt(text.replace("+", ""));
-
-let count = 0;
-
-const speed = target / 50;
-
-counter.innerText = "0";
-
-const updateCounter = () => {
-
-count += speed;
-
-if (count < target) {
-
-counter.innerText = "+" + Math.floor(count);
-
-requestAnimationFrame(updateCounter);
-
-} else {
-
-counter.innerText = "+" + target;
+slides[index].classList.add("active");
 
 }
 
-};
+if(nextBtn){
 
-updateCounter();
+nextBtn.addEventListener("click",()=>{
+
+current++;
+
+if(current >= slides.length){
+current = 0;
+}
+
+showSlide(current);
+
+});
 
 }
 
+if(prevBtn){
+
+prevBtn.addEventListener("click",()=>{
+
+current--;
+
+if(current < 0){
+current = slides.length - 1;
+}
+
+showSlide(current);
+
 });
-
-// زر العودة للأعلى
-
-const backToTop = document.createElement("button");
-
-backToTop.innerHTML = "↑";
-
-backToTop.id = "backToTop";
-
-document.body.appendChild(backToTop);
-
-window.addEventListener("scroll", () => {
-
-if (window.scrollY > 500) {
-
-backToTop.style.display = "flex";
-
-} else {
-
-backToTop.style.display = "none";
 
 }
 
-});
+// تشغيل تلقائي
 
-backToTop.addEventListener("click", () => {
+setInterval(()=>{
 
-window.scrollTo({
-top: 0,
-behavior: "smooth"
-});
+current++;
 
-});
+if(current >= slides.length){
+current = 0;
+}
 
-// تأثير بسيط للأزرار
+showSlide(current);
 
-document.querySelectorAll(".btn-primary, .btn-secondary").forEach((btn) => {
-
-btn.addEventListener("mouseenter", () => {
-
-btn.style.transform = "translateY(-3px)";
-
-});
-
-btn.addEventListener("mouseleave", () => {
-
-btn.style.transform = "translateY(0px)";
-
-});
-
-});
-
-console.log("Islam Plus Landing Page Ready");
+},3000);
