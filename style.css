@@ -468,3 +468,19 @@ cursor:pointer;
 .slide-btn:hover{
 opacity:.9;
 }
+.phones{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+margin:20px 0;
+}
+
+.phones a{
+background:white;
+color:#6a11cb;
+padding:12px 20px;
+border-radius:30px;
+font-weight:700;
+text-decoration:none;
+}
