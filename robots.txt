@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://eslamnetplus.github.io/eslamplus-landing/sitemap.xml
