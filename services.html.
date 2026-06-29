@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>خدمات إسلام بلس | الدفع الإلكتروني وشحن الألعاب في اليمن</title>
+
+<meta name="description" content="اكتشف جميع خدمات إسلام بلس للدفع الإلكتروني، شحن الألعاب، تغذية الحسابات، البطاقات الإلكترونية، خدمات الواي فاي، وإضافة شبكات الواي فاي في اليمن.">
+
+<meta name="keywords" content="الدفع الإلكتروني, شحن الألعاب, الكريمي, المحافظ الإلكترونية, بطاقات Google Play, بطاقات iTunes, واي فاي, إسلام بلس">
+
+<meta name="robots" content="index,follow">
+
+<link rel="canonical" href="https://eslamnetplus.github.io/eslamplus-landing/services.html">
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header class="hero">
+
+<nav class="navbar">
+
+<div class="logo-area">
+<img src="assets/logo.png" alt="إسلام بلس">
+<span>إسلام بلس</span>
+</div>
+
+<div class="menu">
+<a href="index.html">الرئيسية</a>
+<a href="about.html">من نحن</a>
+<a href="services.html">الخدمات</a>
+<a href="index.html#contact">التواصل</a>
+</div>
+
+</nav>
+
+<div class="hero-content">
+
+<div class="hero-text">
+
+<h1>خدمات إسلام بلس</h1>
+
+<p>
+
+كل خدمات الدفع الإلكتروني والخدمات الرقمية في مكان واحد.
+
+</p>
+
+</div>
+
+</div>
+
+</header>
+
+<section class="services">
+
+<h2>خدماتنا</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>💳 الدفع الإلكتروني</h3>
+
+<p>
+
+تنفيذ خدمات الدفع الإلكتروني بسرعة وأمان داخل اليمن.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🏦 تغذية الحساب</h3>
+
+<p>
+
+تغذية حساب العميل عبر الكريمي بنك والمحافظ الإلكترونية المختلفة.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🎮 شحن الألعاب</h3>
+
+<p>
+
+شحن PUBG Mobile وFree Fire وRoblox والعديد من الألعاب بشكل فوري.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>💬 شحن برامج المحادثة</h3>
+
+<p>
+
+شحن IMO وTopTop وYalla Live وHapi والعديد من التطبيقات الأخرى.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>📶 كروت الواي فاي</h3>
+
+<p>
+
+شراء وتجديد كروت شبكات الواي فاي بسهولة وسرعة.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🌐 لأصحاب الشبكات</h3>
+
+<p>
+
+يمكنك إضافة شبكتك إلى منصة إسلام بلس وتسويق كروتك والوصول إلى عدد أكبر من العملاء.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🎫 البطاقات الإلكترونية</h3>
+
+<p>
+
+شراء بطاقات Google Play وiTunes والعديد من البطاقات الرقمية.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>📱 خدمات الاتصالات</h3>
+
+<p>
+
+تنفيذ خدمات شركات الاتصالات المختلفة بكل سهولة.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="network-owners">
+
+<div class="container">
+
+<h2>هل تمتلك شبكة واي فاي؟</h2>
+
+<p>
+
+انضم إلى منصة إسلام بلس وأضف شبكتك ليتمكن آلاف العملاء من شراء وتجديد كروتك بسهولة.
+
+</p>
+
+<a href="https://wa.me/967782666791" class="btn-primary">
+
+تواصل معنا لإضافة شبكتك
+
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 إسلام بلس للدفع الإلكتروني
+
+</p>
+
+</footer>
+
+</body>
+
+</html>
