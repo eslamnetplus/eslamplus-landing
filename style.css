@@ -369,3 +369,436 @@ color:#fff;
 transform:scale(1.2);
 
    }
+/* ==================================================
+   Screenshots
+================================================== */
+
+#screens{
+
+background:#f8f9fc;
+
+}
+
+#screens .carousel{
+
+border-radius:30px;
+
+overflow:hidden;
+
+box-shadow:0 25px 60px rgba(0,0,0,.12);
+
+}
+
+#screens .carousel-item img{
+
+border-radius:30px;
+
+transition:.4s;
+
+}
+
+#screens .carousel-item img:hover{
+
+transform:scale(1.02);
+
+}
+
+/* ==================================================
+   Network Owners
+================================================== */
+
+.network-section{
+
+background:linear-gradient(135deg,#6C2BD9,#8E5CF7);
+
+color:#fff;
+
+padding:70px 50px;
+
+border-radius:35px;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.network-section::before{
+
+content:"";
+
+position:absolute;
+
+width:320px;
+
+height:320px;
+
+background:rgba(255,255,255,.08);
+
+border-radius:50%;
+
+left:-120px;
+
+top:-120px;
+
+}
+
+.network-section::after{
+
+content:"";
+
+position:absolute;
+
+width:220px;
+
+height:220px;
+
+background:rgba(255,255,255,.06);
+
+border-radius:50%;
+
+right:-80px;
+
+bottom:-80px;
+
+}
+
+.network-section>*{
+
+position:relative;
+
+z-index:2;
+
+}
+
+.network-section h2{
+
+font-size:2.4rem;
+
+font-weight:900;
+
+margin-bottom:25px;
+
+}
+
+.network-section p{
+
+font-size:1.1rem;
+
+opacity:.95;
+
+}
+
+.network-section ul{
+
+list-style:none;
+
+padding:0;
+
+margin:30px 0;
+
+}
+
+.network-section ul li{
+
+margin-bottom:14px;
+
+font-size:18px;
+
+}
+
+.network-section .btn{
+
+margin-top:20px;
+
+   }
+/* ==================================================
+   Contact
+================================================== */
+
+#contact{
+
+background:#fff;
+
+}
+
+#contact .card{
+
+border:none;
+
+border-radius:25px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+transition:.35s;
+
+}
+
+#contact .card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 25px 50px rgba(108,43,217,.15);
+
+}
+
+#contact i{
+
+font-size:55px;
+
+color:var(--primary);
+
+margin-bottom:20px;
+
+}
+
+#contact h5{
+
+font-weight:800;
+
+}
+
+#contact a{
+
+color:var(--primary);
+
+font-weight:700;
+
+}
+
+/* ==================================================
+   Footer
+================================================== */
+
+footer{
+
+background:#161626;
+
+color:#fff;
+
+padding:50px 0;
+
+text-align:center;
+
+}
+
+footer p{
+
+margin:0;
+
+opacity:.85;
+
+}
+
+footer a{
+
+color:#fff;
+
+}
+
+footer a:hover{
+
+color:#bda5ff;
+
+}
+
+/* ==================================================
+   WhatsApp Button
+================================================== */
+
+.whatsapp-float{
+
+position:fixed;
+
+left:20px;
+
+bottom:20px;
+
+width:65px;
+
+height:65px;
+
+background:#25D366;
+
+border-radius:50%;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:34px;
+
+color:#fff;
+
+z-index:9999;
+
+box-shadow:0 12px 35px rgba(0,0,0,.25);
+
+transition:.3s;
+
+}
+
+.whatsapp-float:hover{
+
+transform:scale(1.12);
+
+color:#fff;
+
+   }
+/* ==================================================
+   Responsive
+================================================== */
+
+@media(max-width:992px){
+
+section{
+
+padding:70px 0;
+
+}
+
+.hero-section{
+
+text-align:center;
+
+}
+
+.hero-phone{
+
+max-width:270px;
+
+margin:40px auto;
+
+}
+
+.hero-section h1{
+
+font-size:2.5rem;
+
+}
+
+.hero-section .lead{
+
+margin:auto;
+
+}
+
+.navbar .btn{
+
+width:100%;
+
+margin-top:15px;
+
+}
+
+.network-section{
+
+padding:45px 30px;
+
+text-align:center;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero-section h1{
+
+font-size:2rem;
+
+}
+
+.hero-section p{
+
+font-size:1rem;
+
+}
+
+.card{
+
+margin-bottom:20px;
+
+}
+
+.network-section h2{
+
+font-size:1.9rem;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.btn{
+
+width:100%;
+
+}
+
+.hero-phone{
+
+max-width:220px;
+
+}
+
+.hero-section h1{
+
+font-size:1.8rem;
+
+}
+
+.hero-section .btn{
+
+margin-bottom:12px;
+
+}
+
+}
+
+/* ==================================================
+   Animations
+================================================== */
+
+.card,
+
+.feature-card,
+
+.hero-phone,
+
+.btn{
+
+transition:all .35s ease;
+
+}
+
+::selection{
+
+background:#6C2BD9;
+
+color:#fff;
+
+}
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#6C2BD9;
+
+border-radius:20px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#f2f2f2;
+
+}
