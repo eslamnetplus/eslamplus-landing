@@ -1044,3 +1044,215 @@ background:#5521ab;
     width: 100%;
   }
    }
+
+/* =====================================
+   Hero V3
+===================================== */
+
+.hero-section{
+
+background:linear-gradient(135deg,#f8f5ff 0%,#ffffff 55%,#f2ecff 100%);
+
+position:relative;
+
+overflow:hidden;
+
+padding:100px 0;
+
+}
+
+.hero-section::before{
+
+content:"";
+
+position:absolute;
+
+width:500px;
+
+height:500px;
+
+background:rgba(108,43,217,.08);
+
+border-radius:50%;
+
+top:-220px;
+
+right:-180px;
+
+filter:blur(15px);
+
+}
+
+.hero-section::after{
+
+content:"";
+
+position:absolute;
+
+width:320px;
+
+height:320px;
+
+background:rgba(142,92,247,.08);
+
+border-radius:50%;
+
+bottom:-120px;
+
+left:-120px;
+
+filter:blur(15px);
+
+}
+
+.hero-section .container{
+
+position:relative;
+
+z-index:2;
+
+}
+
+.hero-section h1{
+
+font-size:3.5rem;
+
+font-weight:900;
+
+line-height:1.2;
+
+color:#222;
+
+margin-bottom:25px;
+
+}
+
+.hero-section .lead{
+
+font-size:1.15rem;
+
+line-height:2;
+
+color:#666;
+
+max-width:580px;
+
+}
+
+.hero-phone{
+
+width:100%;
+
+max-width:360px;
+
+border-radius:35px;
+
+box-shadow:0 30px 60px rgba(0,0,0,.15);
+
+transition:.4s;
+
+margin:auto;
+
+}
+
+.hero-phone:hover{
+
+transform:translateY(-12px);
+
+}
+
+.hero-section .badge{
+
+font-size:1rem;
+
+padding:12px 22px;
+
+}
+
+.hero-section .btn{
+
+min-width:200px;
+
+font-weight:700;
+
+}
+
+.hero-section .row.text-center h2{
+
+font-size:2.4rem;
+
+font-weight:900;
+
+margin-bottom:8px;
+
+}
+
+.hero-section .row.text-center p{
+
+margin:0;
+
+color:#666;
+
+}
+
+@media(max-width:992px){
+
+.hero-section{
+
+text-align:center;
+
+padding:70px 0;
+
+}
+
+.hero-section h1{
+
+font-size:2.5rem;
+
+}
+
+.hero-section .lead{
+
+margin:auto;
+
+}
+
+.hero-phone{
+
+max-width:270px;
+
+margin-bottom:35px;
+
+}
+
+.hero-section .d-grid,
+
+.hero-section .d-md-flex{
+
+justify-content:center;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.hero-section h1{
+
+font-size:2rem;
+
+}
+
+.hero-section .btn{
+
+width:100%;
+
+}
+
+.hero-section .row.text-center h2{
+
+font-size:2rem;
+
+}
+
+                            }
