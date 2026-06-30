@@ -562,3 +562,141 @@ padding:12px 0;
 margin-top:20px;
 
 }
+
+/* ==========================
+   Contact
+========================== */
+
+#contact{
+
+background:#f8f9fc;
+
+}
+
+#contact .card{
+
+border:none;
+
+border-radius:20px;
+
+transition:.35s;
+
+box-shadow:0 12px 30px rgba(0,0,0,.07);
+
+}
+
+#contact .card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 25px 45px rgba(108,43,217,.15);
+
+}
+
+#contact i{
+
+font-size:52px;
+
+margin-bottom:15px;
+
+}
+
+#contact a{
+
+font-weight:700;
+
+color:var(--primary);
+
+}
+
+/* ==========================
+   Download
+========================== */
+
+#download{
+
+background:linear-gradient(135deg,#6C2BD9,#8E5CF7);
+
+color:#fff;
+
+}
+
+#download h2{
+
+font-weight:800;
+
+font-size:2.5rem;
+
+}
+
+#download .btn{
+
+margin-top:20px;
+
+}
+
+#download img{
+
+transition:.35s;
+
+}
+
+#download img:hover{
+
+transform:scale(1.06);
+
+}
+
+/* ==========================
+   Footer
+========================== */
+
+footer{
+
+background:#17172a;
+
+color:#fff;
+
+padding:50px 0;
+
+text-align:center;
+
+}
+
+footer img{
+
+margin:auto;
+
+margin-bottom:18px;
+
+}
+
+footer h5{
+
+font-weight:800;
+
+}
+
+footer p{
+
+opacity:.85;
+
+}
+
+/* ==========================
+   WhatsApp Button
+========================== */
+
+.position-fixed{
+
+transition:.35s;
+
+box-shadow:0 12px 30px rgba(0,0,0,.18);
+
+}
+
+.position-fixed:hover{
+
+transform:scale(1.12);
+
+}
