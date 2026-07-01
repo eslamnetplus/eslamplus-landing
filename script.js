@@ -1,65 +1,58 @@
-// Slider
+// ======================================
+// Islam Plus v3
+// ======================================
 
-const slides = document.querySelectorAll(".slide");
+// Navbar Scroll Effect
+window.addEventListener("scroll", function () {
 
-const nextBtn = document.querySelector(".next");
+    const navbar = document.querySelector(".navbar");
 
-const prevBtn = document.querySelector(".prev");
-
-let current = 0;
-
-function showSlide(index){
-
-slides.forEach(slide=>{
-slide.classList.remove("active");
-});
-
-slides[index].classList.add("active");
-
-}
-
-if(nextBtn){
-
-nextBtn.addEventListener("click",()=>{
-
-current++;
-
-if(current >= slides.length){
-current = 0;
-}
-
-showSlide(current);
+    if (window.scrollY > 30) {
+        navbar.classList.add("shadow");
+    } else {
+        navbar.classList.remove("shadow");
+    }
 
 });
 
-}
+// Smooth Active Links
+const links = document.querySelectorAll(".nav-link");
 
-if(prevBtn){
+links.forEach(link => {
 
-prevBtn.addEventListener("click",()=>{
+    link.addEventListener("click", function () {
 
-current--;
+        links.forEach(item => item.classList.remove("active"));
 
-if(current < 0){
-current = slides.length - 1;
-}
+        this.classList.add("active");
 
-showSlide(current);
+    });
 
 });
 
-}
+// Fade Animation
+const observer = new IntersectionObserver((entries) => {
 
-// تشغيل تلقائي
+    entries.forEach(entry => {
 
-setInterval(()=>{
+        if (entry.isIntersecting) {
 
-current++;
+            entry.target.classList.add("show");
 
-if(current >= slides.length){
-current = 0;
-}
+        }
 
-showSlide(current);
+    });
 
-},3000);
+}, {
+    threshold: 0.15
+});
+
+document.querySelectorAll(
+".service-card,.trust-card,.step-card,.why-card,.contact-card,.network-card"
+).forEach(el => {
+
+    el.classList.add("hidden");
+
+    observer.observe(el);
+
+});
