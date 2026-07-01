@@ -1,156 +1,184 @@
-/* ==================================================
+/* ===================================
    Islam Plus v3
-   Base Styles
-================================================== */
+=================================== */
 
 :root{
-  --primary:#6C2BD9;
-  --primary-dark:#5521ab;
-  --secondary:#8E5CF7;
-  --success:#22c55e;
-  --light:#f8f9fc;
-  --white:#ffffff;
-  --dark:#1f2937;
-  --text:#4b5563;
-  --border:#ececf4;
+
+--primary:#6C2BD9;
+--primary-dark:#5521AB;
+--secondary:#8E5CF7;
+--success:#22C55E;
+--dark:#1F2937;
+--gray:#6B7280;
+--light:#F8F9FC;
+--white:#FFFFFF;
+
 }
 
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+
 }
 
 html{
-  scroll-behavior:smooth;
+
+scroll-behavior:smooth;
+
 }
 
 body{
-  font-family:"Cairo",sans-serif;
-  background:#fafbff;
-  color:var(--dark);
-  line-height:1.8;
-  overflow-x:hidden;
+
+font-family:"Cairo",sans-serif;
+background:var(--light);
+color:var(--dark);
+line-height:1.8;
+overflow-x:hidden;
+
 }
 
 img{
-  display:block;
-  max-width:100%;
+
+max-width:100%;
+display:block;
+
 }
 
 a{
-  text-decoration:none;
-  transition:.3s;
+
+text-decoration:none;
+transition:.3s;
+
 }
 
 section{
-  padding:90px 0;
+
+padding:90px 0;
+
 }
 
 .container{
-  max-width:1200px;
+
+max-width:1200px;
+
 }
 
-.text-primary{
-  color:var(--primary)!important;
-}
-
-.bg-primary{
-  background:linear-gradient(135deg,var(--primary),var(--secondary))!important;
-}
-
-/* ==================================================
-   Buttons
-================================================== */
-
-.btn{
-  border-radius:50px;
-  font-weight:700;
-  transition:.3s;
-}
-
-.btn-primary{
-  background:linear-gradient(135deg,var(--primary),var(--secondary));
-  border:none;
-}
-
-.btn-primary:hover{
-  transform:translateY(-3px);
-  box-shadow:0 12px 30px rgba(108,43,217,.30);
-}
-
-.btn-outline-primary{
-  border:2px solid var(--primary);
-  color:var(--primary);
-}
-
-.btn-outline-primary:hover{
-  background:var(--primary);
-  color:#fff;
-}
-
-/* ==================================================
+/* =====================
    Navbar
-================================================== */
+===================== */
 
 .navbar{
-  background:#fff!important;
-  padding:14px 0;
-  box-shadow:0 8px 25px rgba(0,0,0,.05);
-}
 
-.navbar-brand img{
-  width:52px;
-  height:52px;
-  border-radius:14px;
+background:#fff;
+padding:14px 0;
+transition:.3s;
+
 }
 
 .navbar-brand h5{
-  font-weight:800;
+
+margin:0;
+font-weight:800;
+
+}
+
+.navbar-brand small{
+
+font-size:.75rem;
+
 }
 
 .nav-link{
-  color:#444!important;
-  font-weight:700;
-  margin:0 10px;
+
+font-weight:700;
+margin:0 12px;
+color:#444!important;
+
 }
 
 .nav-link:hover{
-  color:var(--primary)!important;
+
+color:var(--primary)!important;
+
 }
-/* ==================================================
-   Hero Section
-================================================== */
+
+/* =====================
+   Buttons
+===================== */
+
+.btn{
+
+border-radius:50px;
+padding:12px 28px;
+font-weight:700;
+transition:.35s;
+
+}
+
+.btn-primary{
+
+background:linear-gradient(135deg,var(--primary),var(--secondary));
+border:none;
+
+}
+
+.btn-primary:hover{
+
+transform:translateY(-3px);
+
+box-shadow:0 15px 30px rgba(108,43,217,.25);
+
+}
+
+.btn-outline-primary{
+
+border:2px solid var(--primary);
+color:var(--primary);
+
+}
+
+.btn-outline-primary:hover{
+
+background:var(--primary);
+color:#fff;
+
+}
+
+/* =====================
+   Hero
+===================== */
 
 .hero-section{
 
-background:linear-gradient(135deg,#f7f3ff 0%,#ffffff 55%,#f3eeff 100%);
+background:linear-gradient(
+135deg,
+#faf7ff 0%,
+#ffffff 60%,
+#f4eeff 100%
+);
 
+text-align:center;
 position:relative;
-
 overflow:hidden;
-
-padding:100px 0;
 
 }
 
 .hero-section::before{
 
 content:"";
-
 position:absolute;
 
-width:500px;
-
-height:500px;
+width:420px;
+height:420px;
 
 background:rgba(108,43,217,.08);
 
 border-radius:50%;
 
-top:-220px;
-
-right:-180px;
+top:-150px;
+right:-150px;
 
 filter:blur(20px);
 
@@ -159,11 +187,9 @@ filter:blur(20px);
 .hero-section::after{
 
 content:"";
-
 position:absolute;
 
 width:320px;
-
 height:320px;
 
 background:rgba(142,92,247,.10);
@@ -171,7 +197,6 @@ background:rgba(142,92,247,.10);
 border-radius:50%;
 
 bottom:-120px;
-
 left:-120px;
 
 filter:blur(20px);
@@ -181,151 +206,125 @@ filter:blur(20px);
 .hero-section .container{
 
 position:relative;
-
 z-index:2;
 
 }
 
-.hero-section h1{
+.hero-badge{
 
-font-size:3.5rem;
+display:inline-block;
+
+background:#eee5ff;
+
+color:var(--primary);
+
+padding:10px 20px;
+
+border-radius:50px;
+
+font-weight:700;
+
+}
+
+.hero-title{
+
+font-size:3.6rem;
 
 font-weight:900;
+
+margin:35px 0 25px;
 
 line-height:1.2;
 
-margin-bottom:25px;
+}
 
-color:#222;
+.hero-title span{
+
+display:block;
+
+color:var(--primary);
 
 }
 
-.hero-section .lead{
+.hero-text{
 
-font-size:1.15rem;
-
-color:#666;
-
-line-height:2;
-
-max-width:560px;
-
-}
-
-.hero-phone{
-
-max-width:360px;
+max-width:760px;
 
 margin:auto;
 
-border-radius:35px;
+font-size:1.15rem;
 
-box-shadow:0 35px 70px rgba(0,0,0,.15);
-
-transition:.4s;
+color:var(--gray);
 
 }
 
-.hero-phone:hover{
+.hero-buttons{
 
-transform:translateY(-10px) scale(1.02);
+margin-top:40px;
 
-}
+display:flex;
 
-.hero-section .badge{
+justify-content:center;
 
-font-size:1rem;
+gap:18px;
 
-padding:12px 24px;
-
-}
-
-.hero-section .btn{
-
-min-width:190px;
-
-padding:14px 26px;
+flex-wrap:wrap;
 
 }
 
-.hero-section .row.text-center h2{
+.hero-stats{
 
-font-size:2.4rem;
+display:flex;
+
+justify-content:center;
+
+gap:50px;
+
+margin-top:70px;
+
+flex-wrap:wrap;
+
+}
+
+.hero-stats h2{
+
+font-size:2.5rem;
 
 font-weight:900;
+
+color:var(--primary);
 
 margin-bottom:8px;
 
 }
 
-.hero-section .row.text-center p{
+.hero-stats span{
 
-color:#666;
-
-margin:0;
+color:var(--gray);
 
    }
-/* ==================================================
-   Services
-================================================== */
+/* ===================================
+   Trust Section
+=================================== */
 
-#services{
-  background:#fff;
+.trust-section{
+
+padding:70px 0;
+background:#fff;
+
 }
 
-#services .card{
-  border:none;
-  border-radius:24px;
-  box-shadow:0 15px 40px rgba(0,0,0,.06);
-  transition:.35s;
-  overflow:hidden;
-  height:100%;
-}
-
-#services .card:hover{
-  transform:translateY(-12px);
-  box-shadow:0 25px 50px rgba(108,43,217,.18);
-}
-
-#services .card-body{
-  padding:35px 25px;
-}
-
-#services i{
-  font-size:55px;
-  margin-bottom:20px;
-  transition:.35s;
-}
-
-#services .card:hover i{
-  transform:scale(1.15);
-}
-
-#services h5{
-  font-weight:800;
-  margin-bottom:15px;
-}
-
-#services p{
-  color:#666;
-  font-size:15px;
-}
-
-/* ==================================================
-   Features
-================================================== */
-
-.feature-card{
+.trust-card{
 
 background:#fff;
 
-border-radius:24px;
+border-radius:22px;
 
 padding:35px 25px;
 
-box-shadow:0 15px 40px rgba(0,0,0,.06);
-
 text-align:center;
+
+box-shadow:0 10px 30px rgba(0,0,0,.06);
 
 transition:.35s;
 
@@ -333,79 +332,252 @@ height:100%;
 
 }
 
-.feature-card:hover{
-
-background:linear-gradient(135deg,var(--primary),var(--secondary));
-
-color:#fff;
+.trust-card:hover{
 
 transform:translateY(-10px);
 
-}
-
-.feature-card:hover h4,
-.feature-card:hover p{
-
-color:#fff;
+box-shadow:0 20px 45px rgba(108,43,217,.15);
 
 }
 
-.feature-card i{
+.trust-card i{
 
-font-size:55px;
-
-margin-bottom:20px;
+font-size:3rem;
 
 color:var(--primary);
 
-transition:.35s;
+margin-bottom:20px;
 
 }
 
-.feature-card:hover i{
+.trust-card h5{
 
-color:#fff;
+font-weight:800;
 
-transform:scale(1.2);
+margin-bottom:10px;
 
-   }
-/* ==================================================
-   Screenshots
-================================================== */
+}
 
-#screens{
+.trust-card p{
+
+color:var(--gray);
+
+margin:0;
+
+}
+
+/* ===================================
+   Section Title
+=================================== */
+
+.section-title{
+
+margin-bottom:70px;
+
+}
+
+.section-title span{
+
+display:inline-block;
+
+background:#eee5ff;
+
+color:var(--primary);
+
+padding:10px 22px;
+
+border-radius:50px;
+
+font-weight:700;
+
+margin-bottom:18px;
+
+}
+
+.section-title h2{
+
+font-size:2.7rem;
+
+font-weight:900;
+
+margin-bottom:18px;
+
+}
+
+.section-title p{
+
+max-width:650px;
+
+margin:auto;
+
+color:var(--gray);
+
+}
+
+/* ===================================
+   Services
+=================================== */
+
+.services-section{
 
 background:#f8f9fc;
 
 }
 
-#screens .carousel{
+.service-card{
 
-border-radius:30px;
+background:#fff;
 
-overflow:hidden;
+border-radius:24px;
 
-box-shadow:0 25px 60px rgba(0,0,0,.12);
+padding:40px 30px;
 
-}
+text-align:center;
 
-#screens .carousel-item img{
+box-shadow:0 12px 35px rgba(0,0,0,.06);
 
-border-radius:30px;
+transition:.35s;
 
-transition:.4s;
+height:100%;
 
-}
-
-#screens .carousel-item img:hover{
-
-transform:scale(1.02);
+border:1px solid transparent;
 
 }
 
-/* ==================================================
-   Network Owners
-================================================== */
+.service-card:hover{
+
+transform:translateY(-12px);
+
+border-color:#d9c6ff;
+
+box-shadow:0 25px 50px rgba(108,43,217,.16);
+
+}
+
+.service-card i{
+
+font-size:3.4rem;
+
+color:var(--primary);
+
+margin-bottom:20px;
+
+}
+
+.service-card h4{
+
+font-weight:800;
+
+margin-bottom:15px;
+
+}
+
+.service-card p{
+
+color:var(--gray);
+
+margin:0;
+
+}
+
+.service-featured{
+
+background:linear-gradient(135deg,var(--primary),var(--secondary));
+
+color:#fff;
+
+}
+
+.service-featured i,
+
+.service-featured p,
+
+.service-featured h4{
+
+color:#fff;
+
+}
+
+/* ===================================
+   Steps
+=================================== */
+
+.steps-section{
+
+background:#fff;
+
+}
+
+.step-card{
+
+background:#fff;
+
+padding:35px;
+
+border-radius:24px;
+
+text-align:center;
+
+box-shadow:0 10px 30px rgba(0,0,0,.06);
+
+position:relative;
+
+height:100%;
+
+transition:.35s;
+
+}
+
+.step-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.step-number{
+
+width:70px;
+
+height:70px;
+
+border-radius:50%;
+
+background:linear-gradient(135deg,var(--primary),var(--secondary));
+
+color:#fff;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:28px;
+
+font-weight:900;
+
+margin:auto auto 25px;
+
+}
+
+.step-card h4{
+
+font-weight:800;
+
+margin-bottom:15px;
+
+}
+
+.step-card p{
+
+color:var(--gray);
+
+margin:0;
+
+   }
+/* ===================================
+   Network Section
+=================================== */
 
 .network-section{
 
@@ -413,67 +585,13 @@ background:linear-gradient(135deg,#6C2BD9,#8E5CF7);
 
 color:#fff;
 
-padding:70px 50px;
-
-border-radius:35px;
-
-position:relative;
-
-overflow:hidden;
-
-}
-
-.network-section::before{
-
-content:"";
-
-position:absolute;
-
-width:320px;
-
-height:320px;
-
-background:rgba(255,255,255,.08);
-
-border-radius:50%;
-
-left:-120px;
-
-top:-120px;
-
-}
-
-.network-section::after{
-
-content:"";
-
-position:absolute;
-
-width:220px;
-
-height:220px;
-
-background:rgba(255,255,255,.06);
-
-border-radius:50%;
-
-right:-80px;
-
-bottom:-80px;
-
-}
-
-.network-section>*{
-
-position:relative;
-
-z-index:2;
+padding:100px 0;
 
 }
 
 .network-section h2{
 
-font-size:2.4rem;
+font-size:2.8rem;
 
 font-weight:900;
 
@@ -487,503 +605,478 @@ font-size:1.1rem;
 
 opacity:.95;
 
-}
-
-.network-section ul{
-
-list-style:none;
-
-padding:0;
-
-margin:30px 0;
+margin-bottom:35px;
 
 }
 
-.network-section ul li{
+.network-features{
 
-margin-bottom:14px;
+display:grid;
 
-font-size:18px;
+grid-template-columns:1fr 1fr;
 
-}
+gap:18px;
 
-.network-section .btn{
-
-margin-top:20px;
-
-   }
-/* ==================================================
-   Contact
-================================================== */
-
-#contact{
-
-background:#fff;
+margin-top:30px;
 
 }
 
-#contact .card{
-
-border:none;
-
-border-radius:25px;
-
-box-shadow:0 15px 40px rgba(0,0,0,.08);
-
-transition:.35s;
-
-}
-
-#contact .card:hover{
-
-transform:translateY(-8px);
-
-box-shadow:0 25px 50px rgba(108,43,217,.15);
-
-}
-
-#contact i{
-
-font-size:55px;
-
-color:var(--primary);
-
-margin-bottom:20px;
-
-}
-
-#contact h5{
-
-font-weight:800;
-
-}
-
-#contact a{
-
-color:var(--primary);
-
-font-weight:700;
-
-}
-
-/* ==================================================
-   Footer
-================================================== */
-
-footer{
-
-background:#161626;
-
-color:#fff;
-
-padding:50px 0;
-
-text-align:center;
-
-}
-
-footer p{
-
-margin:0;
-
-opacity:.85;
-
-}
-
-footer a{
-
-color:#fff;
-
-}
-
-footer a:hover{
-
-color:#bda5ff;
-
-}
-
-/* ==================================================
-   WhatsApp Button
-================================================== */
-
-.whatsapp-float{
-
-position:fixed;
-
-left:20px;
-
-bottom:20px;
-
-width:65px;
-
-height:65px;
-
-background:#25D366;
-
-border-radius:50%;
+.network-features div{
 
 display:flex;
 
 align-items:center;
 
-justify-content:center;
+gap:10px;
 
-font-size:34px;
-
-color:#fff;
-
-z-index:9999;
-
-box-shadow:0 12px 35px rgba(0,0,0,.25);
-
-transition:.3s;
+font-weight:700;
 
 }
 
-.whatsapp-float:hover{
+.network-features i{
 
-transform:scale(1.12);
+color:#8CFFB5;
+
+font-size:22px;
+
+}
+
+.network-box{
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+justify-content:center;
+
+gap:20px;
+
+}
+
+.network-card{
+
+background:rgba(255,255,255,.12);
+
+backdrop-filter:blur(15px);
+
+padding:35px;
+
+border-radius:24px;
+
+width:260px;
+
+text-align:center;
+
+transition:.35s;
+
+}
+
+.network-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.network-card.active{
+
+background:#fff;
+
+color:#6C2BD9;
+
+}
+
+.network-card i{
+
+font-size:55px;
+
+margin-bottom:18px;
+
+}
+
+.network-arrow{
+
+font-size:40px;
+
+font-weight:900;
+
+opacity:.7;
+
+}
+
+/* ===================================
+   Why Section
+=================================== */
+
+.why-section{
+
+background:#fff;
+
+}
+
+.why-card{
+
+background:#fff;
+
+border-radius:22px;
+
+padding:40px 30px;
+
+text-align:center;
+
+box-shadow:0 12px 35px rgba(0,0,0,.06);
+
+transition:.35s;
+
+height:100%;
+
+}
+
+.why-card:hover{
+
+background:linear-gradient(135deg,#6C2BD9,#8E5CF7);
+
+transform:translateY(-10px);
+
+}
+
+.why-card:hover h4,
+
+.why-card:hover p,
+
+.why-card:hover i{
 
 color:#fff;
 
+}
+
+.why-card i{
+
+font-size:50px;
+
+color:#6C2BD9;
+
+margin-bottom:20px;
+
+}
+
+.why-card h4{
+
+font-weight:800;
+
+margin-bottom:15px;
+
+}
+
+.why-card p{
+
+color:#666;
+
+margin:0;
+
+}
+
+/* ===================================
+   Download
+=================================== */
+
+.download-section{
+
+background:linear-gradient(135deg,#6C2BD9,#8E5CF7);
+
+color:#fff;
+
+text-align:center;
+
+padding:110px 0;
+
+}
+
+.download-section h2{
+
+font-size:3rem;
+
+font-weight:900;
+
+margin:25px 0;
+
+}
+
+.download-section p{
+
+font-size:1.15rem;
+
+opacity:.95;
+
+margin-bottom:40px;
+
+}
+
+.download-section .btn{
+
+background:#fff;
+
+color:#6C2BD9;
+
+border:none;
+
+font-weight:800;
+
+padding:16px 42px;
+
+}
+
+.download-section .btn:hover{
+
+transform:translateY(-4px);
+
    }
-/* ==================================================
+/* ===================================
+   FAQ
+=================================== */
+
+.faq-section{
+background:#f8f9fc;
+}
+
+.accordion-item{
+border:none;
+border-radius:18px!important;
+overflow:hidden;
+margin-bottom:18px;
+box-shadow:0 10px 25px rgba(0,0,0,.06);
+}
+
+.accordion-button{
+font-weight:700;
+padding:22px;
+background:#fff;
+}
+
+.accordion-button:not(.collapsed){
+background:#6C2BD9;
+color:#fff;
+}
+
+.accordion-button:focus{
+box-shadow:none;
+}
+
+.accordion-body{
+padding:22px;
+color:#666;
+line-height:1.9;
+}
+
+/* ===================================
+   Contact
+=================================== */
+
+.contact-section{
+background:#fff;
+}
+
+.contact-card{
+background:#fff;
+padding:40px 30px;
+border-radius:24px;
+text-align:center;
+box-shadow:0 12px 35px rgba(0,0,0,.06);
+transition:.35s;
+height:100%;
+}
+
+.contact-card:hover{
+transform:translateY(-10px);
+box-shadow:0 22px 45px rgba(108,43,217,.15);
+}
+
+.contact-card i{
+font-size:55px;
+color:var(--primary);
+margin-bottom:20px;
+}
+
+.contact-card h4{
+font-weight:800;
+margin-bottom:15px;
+}
+
+.contact-card a{
+color:var(--primary);
+font-weight:700;
+text-decoration:none;
+}
+
+/* ===================================
+   Footer
+=================================== */
+
+.footer{
+background:#17172A;
+color:#fff;
+padding:80px 0 30px;
+}
+
+.footer h3,
+.footer h5{
+font-weight:800;
+margin-bottom:20px;
+}
+
+.footer p{
+opacity:.85;
+line-height:1.9;
+}
+
+.footer ul{
+list-style:none;
+padding:0;
+margin:0;
+}
+
+.footer li{
+margin-bottom:12px;
+}
+
+.footer a{
+color:#ddd;
+transition:.3s;
+}
+
+.footer a:hover{
+color:#fff;
+padding-right:6px;
+}
+
+.footer hr{
+border-color:rgba(255,255,255,.12);
+margin:35px 0;
+}
+
+/* ===================================
+   WhatsApp Button
+=================================== */
+
+.whatsapp-btn{
+position:fixed;
+left:25px;
+bottom:25px;
+width:60px;
+height:60px;
+background:#25D366;
+color:#fff;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+text-decoration:none;
+z-index:9999;
+box-shadow:0 15px 30px rgba(0,0,0,.25);
+transition:.35s;
+}
+
+.whatsapp-btn:hover{
+transform:scale(1.1);
+color:#fff;
+}
+
+/* ===================================
    Responsive
-================================================== */
+=================================== */
 
 @media(max-width:992px){
 
-section{
-
-padding:70px 0;
-
-}
-
-.hero-section{
-
-text-align:center;
-
-}
-
-.hero-phone{
-
-max-width:270px;
-
-margin:40px auto;
-
-}
-
-.hero-section h1{
-
+.hero-title{
 font-size:2.5rem;
-
 }
 
-.hero-section .lead{
-
-margin:auto;
-
+.hero-stats{
+gap:30px;
 }
 
-.navbar .btn{
-
-width:100%;
-
-margin-top:15px;
-
+.section-title h2{
+font-size:2.1rem;
 }
 
-.network-section{
+.network-features{
+grid-template-columns:1fr;
+}
 
-padding:45px 30px;
-
-text-align:center;
-
+.network-box{
+margin-top:50px;
 }
 
 }
 
 @media(max-width:768px){
 
-.hero-section h1{
-
-font-size:2rem;
-
-}
-
-.hero-section p{
-
-font-size:1rem;
-
-}
-
-.card{
-
-margin-bottom:20px;
-
-}
-
-.network-section h2{
-
-font-size:1.9rem;
-
-}
-
-}
-
-@media(max-width:576px){
-
-.btn{
-
-width:100%;
-
-}
-
-.hero-phone{
-
-max-width:220px;
-
-}
-
-.hero-section h1{
-
-font-size:1.8rem;
-
-}
-
-.hero-section .btn{
-
-margin-bottom:12px;
-
-}
-
-}
-
-/* ==================================================
-   Animations
-================================================== */
-
-.card,
-
-.feature-card,
-
-.hero-phone,
-
-.btn{
-
-transition:all .35s ease;
-
-}
-
-::selection{
-
-background:#6C2BD9;
-
-color:#fff;
-
-}
-
-::-webkit-scrollbar{
-
-width:10px;
-
-}
-
-::-webkit-scrollbar-thumb{
-
-background:#6C2BD9;
-
-border-radius:20px;
-
-}
-
-::-webkit-scrollbar-track{
-
-background:#f2f2f2;
-
-}
-/* =========================================
-   HERO V4 - Islam Plus
-========================================= */
-
-.hero-section{
-    position:relative;
-    overflow:hidden;
-    padding:90px 0;
-    background:linear-gradient(135deg,#faf7ff 0%,#ffffff 45%,#f4efff 100%);
-}
-
-.hero-section::before{
-    content:"";
-    position:absolute;
-    width:450px;
-    height:450px;
-    background:rgba(108,43,217,.08);
-    border-radius:50%;
-    top:-180px;
-    right:-120px;
-    filter:blur(15px);
-}
-
-.hero-section::after{
-    content:"";
-    position:absolute;
-    width:320px;
-    height:320px;
-    background:rgba(142,92,247,.10);
-    border-radius:50%;
-    bottom:-120px;
-    left:-120px;
-    filter:blur(20px);
-}
-
-.hero-section .container{
-    position:relative;
-    z-index:2;
-}
-
-.hero-badge{
-    display:inline-block;
-    background:#eee5ff;
-    color:#6C2BD9;
-    padding:10px 22px;
-    border-radius:50px;
-    font-weight:700;
-    font-size:.95rem;
-}
-
-.hero-title{
-    font-size:3.3rem;
-    font-weight:900;
-    line-height:1.25;
-    color:#222;
-}
-
-.hero-title span{
-    color:#6C2BD9;
-    display:block;
-}
-
-.hero-text{
-    margin-top:25px;
-    color:#666;
-    font-size:1.12rem;
-    line-height:2;
-    max-width:560px;
-}
-
-.hero-buttons{
-    display:flex;
-    gap:15px;
-    margin-top:35px;
-    flex-wrap:wrap;
-}
-
-.hero-buttons .btn{
-    min-width:190px;
-    border-radius:50px;
-    padding:14px 30px;
-    font-weight:700;
-}
-
-.hero-stats{
-    display:flex;
-    gap:35px;
-    margin-top:45px;
-    flex-wrap:wrap;
-}
-
-.hero-stats h3{
-    font-size:2rem;
-    color:#6C2BD9;
-    font-weight:900;
-    margin:0;
-}
-
-.hero-stats span{
-    color:#666;
-}
-
-.phone-wrapper{
-    position:relative;
-    display:inline-block;
-}
-
-.phone-glow{
-    position:absolute;
-    width:360px;
-    height:360px;
-    background:radial-gradient(circle,rgba(108,43,217,.30),transparent 70%);
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    z-index:0;
-}
-
-.hero-phone{
-    position:relative;
-    z-index:2;
-    max-width:350px;
-    border-radius:35px;
-    box-shadow:0 30px 60px rgba(0,0,0,.18);
-    transition:.45s;
-}
-
-.hero-phone:hover{
-    transform:translateY(-10px) scale(1.02);
-}
-
-@media(max-width:991px){
-
-.hero-section{
-text-align:center;
+section{
 padding:70px 0;
 }
 
 .hero-title{
-font-size:2.4rem;
-}
-
-.hero-text{
-margin:auto;
+font-size:2rem;
 }
 
 .hero-buttons{
-justify-content:center;
-}
-
-.hero-stats{
-justify-content:center;
-}
-
-.hero-phone{
-max-width:260px;
-margin-top:20px;
-}
-
-.phone-glow{
-width:260px;
-height:260px;
-}
-
-}
-
-@media(max-width:576px){
-
-.hero-title{
-font-size:1.9rem;
+flex-direction:column;
+align-items:center;
 }
 
 .hero-buttons .btn{
 width:100%;
+max-width:320px;
 }
 
 .hero-stats{
 gap:20px;
 }
 
-.hero-stats h3{
-font-size:1.6rem;
+.hero-stats h2{
+font-size:2rem;
 }
 
-   }
+.download-section h2{
+font-size:2rem;
+}
+
+.network-section h2{
+font-size:2rem;
+}
+
+}
+
+@media(max-width:576px){
+
+.hero-text{
+font-size:1rem;
+}
+
+.section-title h2{
+font-size:1.8rem;
+}
+
+.network-card{
+width:100%;
+}
+
+.contact-card,
+.service-card,
+.trust-card,
+.step-card,
+.why-card{
+padding:30px 22px;
+}
+
+}
+
+/* ===================================
+   Animations
+=================================== */
+
+.service-card,
+.trust-card,
+.step-card,
